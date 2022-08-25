@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.item{
+    width: 800px;
+    height: 800px;
+}
+.item h1{
+    margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+    html{
+        overflow-x: hidden;
+        align-items: center;
+    }
+
+}
+@media (max-width: 1000px) {
+    .container{
+        flex-direction: column;    
+    }
+}
+@media (min-width: 100px) and (max-width: 1000px) {
+    .container .item{
+        width: auto;
+        height: auto;
+    }
+    
+}

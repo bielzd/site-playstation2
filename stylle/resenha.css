@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    align-items: center;
+}
+.item{
+    width: 900px; 
+}
+
+.item p{
+    text-align: justify;
+
+}
+.item img{
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#correct {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+    html{
+        overflow-x: hidden;
+        align-items: center;
+    }
+}
+@media (max-width: 1000px) {
+    .container{
+        flex-direction: column;    
+    }
+}
+@media (min-width: 100px) and (max-width: 1000px) {
+    .container .item{
+        width: auto;
+    }
+    
+}
